@@ -1,0 +1,382 @@
+# Chinese (simplified) translations for the calibre media metadata plugins.
+# Regenerate the msgid list with:  python3 tools/extract_po.py --counts
+# Compile with:                    python3 tools/po2mo.py translations/zh_CN.po
+# build.py does the compile step automatically.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: calibre-media-metadata 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-12 00:00+0800\n"
+"PO-Revision-Date: 2026-11-12 00:00+0800\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# --- plugin descriptions -----------------------------------------------------
+
+msgid "Read title, authors, series, tags, comments, publisher, date, cover art and duration from audio and video files (mp3, m4a, m4b, mp4, mkv, flac, ogg, opus, mov, webm and more) using ffprobe. Requires ffmpeg/ffprobe to be installed."
+msgstr "使用 ffprobe 从音频和视频文件（mp3、m4a、m4b、mp4、mkv、flac、ogg、opus、mov、webm 等）中读取书名、作者、系列、标签、简介、出版社、出版日期、封面和时长。需要已安装 ffmpeg/ffprobe。"
+
+msgid "Add a right-click menu entry that compares the metadata in the calibre library against the tags currently embedded in a book's audio/video files, and writes the fields you tick back into the files using ffmpeg."
+msgstr "在右键菜单中新增一项，把 calibre 书库里的元数据与书籍音视频文件中当前内嵌的标签进行对比，并用 ffmpeg 把你勾选的字段写回文件。"
+
+# --- menu / action -----------------------------------------------------------
+
+msgid "Compare and write media metadata…"
+msgstr "对比并写入媒体元数据…"
+
+msgid "Compare and write media metadata"
+msgstr "对比并写入媒体元数据"
+
+msgid "Compare the calibre metadata with the tags inside audio/video files, then write the fields you tick back into the files"
+msgstr "将 calibre 中的元数据与音视频文件内的标签进行对比，然后把你勾选的字段写回文件"
+
+msgid "Media metadata"
+msgstr "媒体元数据"
+
+msgid "No books selected"
+msgstr "未选择书籍"
+
+msgid "Select one or more books first."
+msgstr "请先选择一本或多本书籍。"
+
+msgid "ffmpeg not found"
+msgstr "未找到 ffmpeg"
+
+msgid "This action needs both ffmpeg and ffprobe.\n\nInstall them, or set their paths in Preferences → Plugins → “Sync media metadata” → Customize."
+msgstr "此操作同时需要 ffmpeg 和 ffprobe。\n\n请安装它们，或在「首选项 → 插件 → “Sync media metadata” → 自定义」中设置它们的路径。"
+
+msgid "No media files"
+msgstr "没有媒体文件"
+
+msgid "None of the selected books have an audio or video format.\n\nSupported: %s"
+msgstr "所选书籍都没有音频或视频格式。\n\n支持的格式：%s"
+
+msgid "Reading media metadata…"
+msgstr "正在读取媒体元数据…"
+
+msgid "Writing media metadata…"
+msgstr "正在写入媒体元数据…"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Some files could not be read"
+msgstr "部分文件无法读取"
+
+msgid "Could not read media metadata"
+msgstr "无法读取媒体元数据"
+
+msgid "Unknown error"
+msgstr "未知错误"
+
+msgid "Nothing to write"
+msgstr "没有需要写入的内容"
+
+msgid "No fields were ticked, so no files were changed."
+msgstr "没有勾选任何字段，因此未修改任何文件。"
+
+msgid "Problems:"
+msgstr "问题："
+
+msgid "Cancelled after {} file."
+msgid_plural "Cancelled after {} files."
+msgstr[0] "已在写入 {} 个文件后取消。"
+
+msgid "Wrote metadata into {} file."
+msgid_plural "Wrote metadata into {} files."
+msgstr[0] "已将元数据写入 {} 个文件。"
+
+msgid "{} file had tracks that the new file cannot hold; they were skipped."
+msgid_plural "{} files had tracks that the new file cannot hold; they were skipped."
+msgstr[0] "有 {} 个文件里存在新文件放不下的轨道，已跳过这些轨道（其余元数据照常写入）。"
+
+msgid "Skipped tracks:"
+msgstr "已跳过的轨道："
+
+# --- comparison dialog -------------------------------------------------------
+
+msgid "Media files:"
+msgstr "媒体文件："
+
+msgid "Field"
+msgstr "字段"
+
+msgid "In calibre library"
+msgstr "calibre 书库中"
+
+msgid "In the file"
+msgstr "文件中"
+
+msgid "Status"
+msgstr "状态"
+
+msgid "Same"
+msgstr "一致"
+
+msgid "Different"
+msgstr "不一致"
+
+msgid "Not in file"
+msgstr "文件中缺失"
+
+msgid "Empty in library"
+msgstr "书库中为空"
+
+msgid "Not writable"
+msgstr "不可写入"
+
+msgid "Info"
+msgstr "信息"
+
+msgid "Select all"
+msgstr "全选"
+
+msgid "Select none"
+msgstr "全不选"
+
+msgid "Select differing"
+msgstr "只选不一致"
+
+msgid "Apply this selection to all files"
+msgstr "将此选择应用到所有文件"
+
+# --- ffmpeg/ffprobe configuration -------------------------------------------
+
+msgid "ffmpeg path:"
+msgstr "ffmpeg 路径："
+
+msgid "ffprobe path:"
+msgstr "ffprobe 路径："
+
+msgid "Auto-detect"
+msgstr "自动检测"
+
+msgid "Browse…"
+msgstr "浏览…"
+
+msgid "Test"
+msgstr "测试"
+
+msgid "Choose %s"
+msgstr "选择 %s"
+
+msgid "All files"
+msgstr "所有文件"
+
+msgid "Not found"
+msgstr "未找到"
+
+msgid "%s could not be located. Install it, or type the full path above."
+msgstr "未能找到 %s。请安装它，或在上方填写完整路径。"
+
+msgid "Failed"
+msgstr "失败"
+
+msgid "Found"
+msgstr "已找到"
+
+msgid "not found"
+msgstr "未找到"
+
+msgid "These paths are shared by both media metadata plugins, so they only have to be set once. Leave blank to auto-detect. Detection checks your PATH and the usual install locations (Homebrew on macOS; C:\\ffmpeg, Program Files, WinGet, Chocolatey and Scoop on Windows). A GUI calibre does not inherit your shell PATH, so setting the path explicitly is the most reliable option."
+msgstr "这两个路径由两个媒体元数据插件共用，只需设置一次。留空则自动检测。检测会查找 PATH 以及常见安装位置（macOS 的 Homebrew；Windows 的 C:\\ffmpeg、Program Files、WinGet、Chocolatey 和 Scoop）。以图形界面启动的 calibre 不会继承 shell 的 PATH，因此手动填写路径最为可靠。"
+
+# --- reader configuration ----------------------------------------------------
+
+msgid "Duration column:"
+msgstr "时长列："
+
+msgid "Duration column datatype:"
+msgstr "时长列数据类型："
+
+msgid "The media duration is stored in a calibre custom column, because calibre has no built-in duration field. Create the column first (Preferences → Add your own columns), then enter its lookup name here, e.g. #duration.\n\nThe datatype must match the column you created exactly — calibre silently ignores the value if it does not. Leave the column name blank to skip duration."
+msgstr "媒体时长存放在 calibre 的自定义列中，因为 calibre 没有内置的时长字段。请先创建该列（首选项 → 添加你自己的列），然后在此填写它的检索名，例如 #duration。\n\n数据类型必须与你创建的列完全一致——不一致时 calibre 会静默忽略该值。列名留空则不处理时长。"
+
+# --- sync configuration ------------------------------------------------------
+
+msgid "ID3 version for mp3:"
+msgstr "mp3 的 ID3 版本："
+
+msgid "v2.3 is understood by the widest range of players and hardware; v2.4 stores UTF-8 tags natively."
+msgstr "v2.3 的兼容性最好，绝大多数播放器和硬件都支持；v2.4 原生以 UTF-8 存储标签。"
+
+msgid "Write cover art into the media files"
+msgstr "将封面写入媒体文件"
+
+msgid "Add this action to the book list right-click menu automatically"
+msgstr "自动将此操作加入书籍列表右键菜单"
+
+msgid "The entry appears in the right-click menu after the next calibre restart. Turn this off to place the action yourself in Preferences → Toolbars → “The context menu for the books in the calibre library”."
+msgstr "该菜单项会在下次重启 calibre 后出现在右键菜单中。关闭此项后，你可以自行在「首选项 → 工具栏 → “calibre 书库中书籍的右键菜单”」中摆放该操作。"
+
+msgid "Custom columns to sync:"
+msgstr "要同步的自定义列："
+
+msgid "Lookup name"
+msgstr "检索名"
+
+msgid "Label"
+msgstr "名称"
+
+msgid "Tag key"
+msgstr "标签键"
+
+msgid "Add column"
+msgstr "添加列"
+
+msgid "Remove column"
+msgstr "移除列"
+
+msgid "Map a calibre custom column to a tag key, e.g. #narrator → album_artist. The lookup name is the one shown in Preferences → Add your own columns, with or without the leading #. Tag keys are ffmpeg names such as artist, album, genre, comment, date, publisher, album_artist, composer, isbn."
+msgstr "把 calibre 的自定义列映射到标签键，例如 #narrator → album_artist。检索名就是「首选项 → 添加你自己的列」中显示的那个，带不带开头的 # 都可以。标签键使用 ffmpeg 的名称，例如 artist、album、genre、comment、date、publisher、album_artist、composer、isbn。"
+
+# --- comparison table: field labels -----------------------------------------
+# ffmeta emits stable field keys; dialog.py renders these labels.
+
+msgid "Title"
+msgstr "书名"
+
+msgid "Authors"
+msgstr "作者"
+
+msgid "Series"
+msgstr "系列"
+
+msgid "Series index"
+msgstr "系列索引"
+
+msgid "Tags"
+msgstr "标签"
+
+msgid "Comments"
+msgstr "简介"
+
+msgid "Publisher"
+msgstr "出版社"
+
+msgid "Published"
+msgstr "出版日期"
+
+msgid "ISBN"
+msgstr "ISBN"
+
+msgid "Rating"
+msgstr "评分"
+
+msgid "Cover"
+msgstr "封面"
+
+msgid "Duration"
+msgstr "时长"
+
+msgid "Container"
+msgstr "容器"
+
+msgid "Video stream"
+msgstr "视频流"
+
+msgid "Audio stream"
+msgstr "音频流"
+
+msgid "Bit rate"
+msgstr "比特率"
+
+msgid "No cover"
+msgstr "无封面"
+
+msgid "Cover, {} bytes"
+msgstr "封面，{} 字节"
+
+# --- comparison table: tooltips ----------------------------------------------
+
+msgid "Writing this clears the existing date tag."
+msgstr "写入将清空文件中已有的日期标签。"
+
+msgid "Writing this clears the existing tag."
+msgstr "写入将清空文件中已有的标签。"
+
+msgid "The file also carries %s; only %s will be written."
+msgstr "文件中还带有 %s；只会写入 %s。"
+
+msgid "ffmpeg has no standard tag for this field; it cannot be written to media files."
+msgstr "ffmpeg 没有此字段对应的标准标签，无法写入媒体文件。"
+
+msgid "ffmpeg cannot store cover art in .%s containers."
+msgstr "ffmpeg 无法在 .%s 容器中存储封面。"
+
+msgid "Writing this removes the existing cover art."
+msgstr "写入将移除文件中已有的封面。"
+
+msgid "Derived from the stream; not a writable tag."
+msgstr "由媒体流推导得出，不是可写入的标签。"
+
+# --- customization_help (calibre uses it to decide whether a plugin is configurable)
+
+msgid "Paths to ffmpeg and ffprobe (leave blank to auto-detect), plus the custom column that should hold the media duration and its datatype."
+msgstr "ffmpeg 和 ffprobe 的路径（留空则自动检测），以及用于存放媒体时长的自定义列及其数据类型。"
+
+msgid "Paths to ffmpeg and ffprobe (leave blank to auto-detect), the ID3 version written to mp3 files, whether to write cover art, whether to add the action to the book list right-click menu, and the mapping from calibre custom columns to tag keys."
+msgstr "ffmpeg 和 ffprobe 的路径（留空则自动检测）、写入 mp3 文件的 ID3 版本、是否写入封面、是否将此操作加入书籍列表右键菜单，以及 calibre 自定义列到标签键的映射。"
+
+# --- ffmpeg/ffprobe 出错提示（binaries.tool_error_text 按 ToolError.kind 组装）---------
+
+msgid "Cannot find %s. Install it, or set the full path in the plugin settings."
+msgstr "找不到 %s。请安装它，或在插件设置里填写完整路径。"
+
+msgid "%s cannot be run: %s"
+msgstr "无法运行 %s：%s"
+
+msgid "%s did not respond within %s seconds."
+msgstr "%s 超过 %s 秒没有响应。"
+
+msgid "%s exited with code %s."
+msgstr "%s 运行失败，退出码 %s。"
+
+msgid "Its output was:"
+msgstr "它的输出是："
+
+# --- 反方向：用文件更新书库（对比对话框里的按钮）------------------------------
+
+msgid "Update library from the files"
+msgstr "用文件中的元数据更新书库"
+
+msgid "Read the tags in these media files and write the checked fields into the calibre metadata of the same books."
+msgstr "读取这些媒体文件里的标签，把勾选的字段写进同一本书的 calibre 元数据。"
+
+msgid "Update file metadata"
+msgstr "更新文件元数据"
+
+msgid "Sync to library only"
+msgstr "仅同步回书库"
+
+msgid "Only written back to the library: the duration comes from the media stream, so there is no tag to write into the file."
+msgstr "只写回书库：时长来自媒体流本身，文件里没有可写的标签。"
+
+msgid "Update library from files"
+msgstr "用文件更新书库"
+
+msgid "Nothing to update"
+msgstr "没有可更新的内容"
+
+msgid "The media files do not carry any metadata that differs from the library."
+msgstr "这些媒体文件里没有与书库不同的元数据。"
+
+msgid "Use the files to update {} book?"
+msgid_plural "Use the files to update {} books?"
+msgstr[0] "用文件里的元数据更新 {} 本书？"
+
+msgid "{} field will be overwritten by the value from the file."
+msgid_plural "{} fields will be overwritten by the values from the files."
+msgstr[0] "{} 个字段会被文件里的值覆盖。"
+
+msgid "Library updated"
+msgstr "书库已更新"
+
+msgid "Updated {} book."
+msgid_plural "Updated {} books."
+msgstr[0] "已更新 {} 本书。"
+
