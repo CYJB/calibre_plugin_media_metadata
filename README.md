@@ -1,7 +1,7 @@
 # calibre 音视频元数据插件
 
-- [⤓ MediaMetadataReader.zip](https://github.com/CYJB/calibre_plugin_media_metadata/releases/download/latest/MediaMetadataReader.zip)
-- [⤓ MediaMetadataSync.zip](https://github.com/CYJB/calibre_plugin_media_metadata/releases/download/latest/MediaMetadataSync.zip)
+- [⤓ MediaMetadataReader.zip](https://github.com/CYJB/Calibre-Plugin-Media-Metadata/releases/download/latest/MediaMetadataReader.zip)
+- [⤓ MediaMetadataSync.zip](https://github.com/CYJB/Calibre-Plugin-Media-Metadata/releases/download/latest/MediaMetadataSync.zip)
 
 给 calibre 补上它原生缺失的音视频元数据能力。calibre 自带的元数据读写只覆盖电子书格式，
 音频和视频文件既读不出内嵌标签，改完书籍信息也写不回去。这两个插件补的就是这块：
@@ -36,7 +36,7 @@ Scoop，以及解压到用户目录的副本。
 2. 再用同样的方式装 `MediaMetadataSync.zip`
 3. **重启 calibre**，右键菜单项才会出现
 
-两个 zip 都在 [Releases](https://github.com/CYJB/calibre_plugin_media_metadata/releases/latest) 页面里。
+两个 zip 都在 [Releases](https://github.com/CYJB/Calibre-Plugin-Media-Metadata/releases/latest) 页面里。
 
 从源码构建就用 `python3 build.py`（Windows 上 `py -3 build.py`），它**只打包**到 `dist/`，
 安装还是走上面三步。
